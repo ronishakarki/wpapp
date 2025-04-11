@@ -1,11 +1,11 @@
 nginx:
   name: nginx-proxy
   labels:
-    id: C0921626
+    id: C0929518
     app: wordpress
     env: dev
   image:
-    repository: garimasubedi/proxy
+    repository: karkironisha/proxy
     tag: v1
     pullPolicy: IfNotPresent
   replicas: 1
