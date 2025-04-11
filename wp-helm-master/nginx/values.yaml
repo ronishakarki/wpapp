@@ -1,0 +1,15 @@
+nginx:
+  name: nginx-proxy
+  labels:
+    id: C0921626
+    app: wordpress
+    env: dev
+  image:
+    repository: garimasubedi/proxy
+    tag: v1
+    pullPolicy: IfNotPresent
+  replicas: 1
+  service:
+    type: NodePort
+    port: 80
+    targetPort: 80
