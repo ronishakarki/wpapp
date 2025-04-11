@@ -5,7 +5,7 @@ nginx:
     app: wordpress
     env: dev
   image:
-    repository: karkironisha/proxy
+    repository: garimasubedi/proxy
     tag: v1
     pullPolicy: IfNotPresent
   replicas: 1
